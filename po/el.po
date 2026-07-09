@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-22 17:26+0000\n"
-"PO-Revision-Date: 2026-06-29 09:56+0000\n"
+"PO-Revision-Date: 2026-07-10 14:00+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/wingpanel/"
 "wingpanel-indicator-sound/el/>\n"
@@ -23,38 +23,35 @@ msgstr "Ρυθμίσεις ήχου…"
 #: src/Indicator.vala:691
 #, c-format
 msgid "Volume: %.0f%%"
-msgstr ""
+msgstr "Ένταση: %.0f%%"
 
 #: src/Indicator.vala:694
 msgid "Middle-click to unmute"
-msgstr ""
+msgstr "Μεσαίο κλικ για άρση σίγασης"
 
 #: src/Indicator.vala:694
 msgid "Middle-click to mute"
-msgstr ""
+msgstr "Μεσαίο κλικ για σίγαση"
 
 #: src/Widgets/PlayerRow.vala:16
-#, fuzzy
-#| msgid "Not currently playing"
 msgid "Not playing"
-msgstr "Καμία αναπαραγωγή"
+msgstr "Δεν γίνεται αναπαραγωγή"
 
 #: src/Widgets/PlayerRow.vala:31
 msgid "Music player"
 msgstr "Πρόγραμμα αναπαραγωγής μουσικής"
 
 #: src/Widgets/PlayerRow.vala:566
-#, fuzzy
 msgid "Unknown Artist"
-msgstr "Άγνωστος τίτλος"
+msgstr "Άγνωστος καλλιτέχνης"
 
 #: src/Widgets/Scale.vala:67
 msgid "Mute"
-msgstr ""
+msgstr "Σίγαση"
 
 #: src/Widgets/Scale.vala:69
 msgid "Unmute"
-msgstr ""
+msgstr "Άρση σίγασης"
 
 #~ msgid "Indicator Sound"
 #~ msgstr "Δείκτης ήχου"
