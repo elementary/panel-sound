@@ -23,8 +23,10 @@ public class Sound.DisplayWidget : Gtk.Box {
     public bool mic_muted { get; set; }
     public string icon_name { get; set; }
 
-    public signal void volume_scroll_event (Gdk.ScrollEvent e);
-    public signal void mic_scroll_event (Gdk.ScrollEvent e);
+    // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
+    // resulsts build error with valac 0.56.18
+    public signal void volume_scroll_event (Value event_boxed);
+    public signal void mic_scroll_event (Value event_boxed);
 
     construct {
         var volume_icon = new Gtk.Image () {
@@ -50,7 +52,9 @@ public class Sound.DisplayWidget : Gtk.Box {
                 return Gdk.EVENT_PROPAGATE;
             }
 
-            mic_scroll_event ((Gdk.ScrollEvent) e);
+            var event_boxed = Value (typeof (Gdk.ScrollEvent));
+            event_boxed.set_boxed (e);
+            mic_scroll_event (event_boxed);
             return Gdk.EVENT_STOP;
         });
 
@@ -60,7 +64,9 @@ public class Sound.DisplayWidget : Gtk.Box {
                 return Gdk.EVENT_PROPAGATE;
             }
 
-            volume_scroll_event ((Gdk.ScrollEvent) e);
+            var event_boxed = Value (typeof (Gdk.ScrollEvent));
+            event_boxed.set_boxed (e);
+            volume_scroll_event (event_boxed);
             return Gdk.EVENT_STOP;
         });
 
