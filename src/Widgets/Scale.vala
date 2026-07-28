@@ -6,7 +6,7 @@
 public class Sound.Widgets.Scale : Granite.Bin {
     // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
     // resulsts build error with valac 0.56.18
-    public signal void scroll_event (Value event_boxed);
+    public signal void scroll_event (Value event_value);
     public signal void slider_dropped ();
 
     public Gtk.Adjustment adjustment { get; construct; }
@@ -54,9 +54,9 @@ public class Sound.Widgets.Scale : Granite.Bin {
                 return Gdk.EVENT_PROPAGATE;
             }
 
-            var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_instance (e);
-            scroll_event (event_boxed);
+            var event_value = Value (typeof (Gdk.ScrollEvent));
+            event_value.set_instance (e);
+            scroll_event (event_value);
 
             return Gdk.EVENT_STOP;
         });

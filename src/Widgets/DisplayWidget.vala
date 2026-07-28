@@ -25,8 +25,8 @@ public class Sound.DisplayWidget : Gtk.Box {
 
     // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
     // resulsts build error with valac 0.56.18
-    public signal void volume_scroll_event (Value event_boxed);
-    public signal void mic_scroll_event (Value event_boxed);
+    public signal void volume_scroll_event (Value event_value);
+    public signal void mic_scroll_event (Value event_value);
 
     construct {
         var volume_icon = new Gtk.Image () {
@@ -52,9 +52,9 @@ public class Sound.DisplayWidget : Gtk.Box {
                 return Gdk.EVENT_PROPAGATE;
             }
 
-            var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_instance (e);
-            mic_scroll_event (event_boxed);
+            var event_value = Value (typeof (Gdk.ScrollEvent));
+            event_value.set_instance (e);
+            mic_scroll_event (event_value);
             return Gdk.EVENT_STOP;
         });
 
@@ -64,9 +64,9 @@ public class Sound.DisplayWidget : Gtk.Box {
                 return Gdk.EVENT_PROPAGATE;
             }
 
-            var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_instance (e);
-            volume_scroll_event (event_boxed);
+            var event_value = Value (typeof (Gdk.ScrollEvent));
+            event_value.set_instance (e);
+            volume_scroll_event (event_value);
             return Gdk.EVENT_STOP;
         });
 
