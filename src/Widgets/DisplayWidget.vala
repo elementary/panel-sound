@@ -25,6 +25,7 @@ public class Sound.DisplayWidget : Gtk.Box {
 
     // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
     // resulsts build error with valac 0.56.18
+    // See https://gitlab.gnome.org/GNOME/vala/-/work_items/1671
     public signal void volume_scroll_event (Value event_value);
     public signal void mic_scroll_event (Value event_value);
 

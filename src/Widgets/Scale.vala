@@ -6,6 +6,7 @@
 public class Sound.Widgets.Scale : Granite.Bin {
     // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
     // resulsts build error with valac 0.56.18
+    // See https://gitlab.gnome.org/GNOME/vala/-/work_items/1671
     public signal void scroll_event (Value event_value);
     public signal void slider_dropped ();
 
