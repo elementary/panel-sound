@@ -55,7 +55,7 @@ public class Sound.Widgets.Scale : Granite.Bin {
             }
 
             var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_boxed (e);
+            event_boxed.set_instance (e);
             scroll_event (event_boxed);
 
             return Gdk.EVENT_STOP;

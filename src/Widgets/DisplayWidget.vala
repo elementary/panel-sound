@@ -53,7 +53,7 @@ public class Sound.DisplayWidget : Gtk.Box {
             }
 
             var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_boxed (e);
+            event_boxed.set_instance (e);
             mic_scroll_event (event_boxed);
             return Gdk.EVENT_STOP;
         });
@@ -65,7 +65,7 @@ public class Sound.DisplayWidget : Gtk.Box {
             }
 
             var event_boxed = Value (typeof (Gdk.ScrollEvent));
-            event_boxed.set_boxed (e);
+            event_boxed.set_instance (e);
             volume_scroll_event (event_boxed);
             return Gdk.EVENT_STOP;
         });

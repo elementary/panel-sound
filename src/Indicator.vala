@@ -329,7 +329,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
     }
 
     private void on_volume_icon_scroll_event (Value event_boxed) {
-        unowned var e = (Gdk.ScrollEvent) event_boxed.get_boxed ();
+        unowned var e = (Gdk.ScrollEvent) event_boxed.peek_pointer ();
         double dir = 0.0;
         if (handle_scroll_event (e, out dir)) {
             handle_change (dir, false);
@@ -337,7 +337,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
     }
 
     private void on_mic_icon_scroll_event (Value event_boxed) {
-        unowned var e = (Gdk.ScrollEvent) event_boxed.get_boxed ();
+        unowned var e = (Gdk.ScrollEvent) event_boxed.peek_pointer ();
         double dir = 0.0;
         if (handle_scroll_event (e, out dir)) {
             handle_change (dir, true);
@@ -423,7 +423,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
             });
 
             mic_scale.scroll_event.connect_after ((event_boxed) => {
-                unowned var e = (Gdk.ScrollEvent) event_boxed.get_boxed ();
+                unowned var e = (Gdk.ScrollEvent) event_boxed.peek_pointer ();
                 double dir = 0.0;
                 if (handle_scroll_event (e, out dir)) {
                     handle_change (dir, true);
@@ -447,7 +447,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
             volume_scale.slider_dropped.connect (play_volume_change_sound);
 
             volume_scale.scroll_event.connect_after ((event_boxed) => {
-                unowned var e = (Gdk.ScrollEvent) event_boxed.get_boxed ();
+                unowned var e = (Gdk.ScrollEvent) event_boxed.peek_pointer ();
                 double dir = 0.0;
                 if (handle_scroll_event (e, out dir)) {
                     handle_change (dir, false);
