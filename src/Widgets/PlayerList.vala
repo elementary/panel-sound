@@ -23,7 +23,7 @@ public class Sound.Widgets.PlayerList : Gtk.Bin {
 
     private AppInfo? default_player;
     private PlayerRow bluetooth_widget;
-    private PlayerRow default_widget;
+    private PlayerRow? default_widget;
     private HashTable<string,PlayerRow> ifaces;
     private Services.DBusImpl impl;
 
@@ -123,11 +123,9 @@ public class Sound.Widgets.PlayerList : Gtk.Bin {
             default_widget.no_show_all = false;
             default_widget.visible = true;
         } else {
-            if (default_widget == null || default_widget.mpris_name == "") {
-                if (default_widget != null) {
-                    default_widget.no_show_all = true;
-                    default_widget.visible = false;
-                }
+            if (default_widget != null && default_widget.mpris_name == "") {
+                default_widget.no_show_all = true;
+                default_widget.visible = false;
             }
 
             PlayerRow widg = new PlayerRow (iface);
