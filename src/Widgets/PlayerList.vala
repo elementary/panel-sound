@@ -43,7 +43,6 @@ public class Sound.Widgets.PlayerList : Granite.Bin {
         });
 
         object_manager = new Services.ObjectManager ();
-        object_manager.bind_property ("has-object", this, "visible", GLib.BindingFlags.SYNC_CREATE);
 
         object_manager.media_player_added.connect ((media_player, name, icon) => {
             bluetooth_widget = new PlayerRow.bluetooth (media_player, name, icon);
