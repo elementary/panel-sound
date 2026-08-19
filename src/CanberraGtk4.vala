@@ -13,9 +13,13 @@ namespace CanberraGtk4 {
 
         if (context != null) {
             return context;
-        } if (Canberra.Context.create (out context) != Canberra.SUCCESS) {
+        }
+
+        if (Canberra.Context.create (out context) != Canberra.SUCCESS) {
             return null;
-        } if (Canberra.Proplist.create (out proplist) != Canberra.SUCCESS) {
+        }
+
+        if (Canberra.Proplist.create (out proplist) != Canberra.SUCCESS) {
             return null;
         }
 
