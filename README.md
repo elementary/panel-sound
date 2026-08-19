@@ -7,8 +7,7 @@
 
 You'll need the following dependencies:
 
-    libcanberra-gtk-dev
-    libgranite-7-dev > 7.7.0
+    libgranite-7-dev >= 7.7.0
     libglib2.0-dev
     libgtk-4-dev
     libnotify-dev
