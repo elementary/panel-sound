@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/io/elementary/wingpanel/sound">
     <file alias="indicator.css" compressed="true">indicator.css</file>
+    <file compressed="true">24/volume.svg</file>
   </gresource>
   <gresource prefix="/org/elementary/wingpanel/icons">
     <file alias="16x16/devices/audio-subwoofer-symbolic.svg" compressed="true" preprocess="xml-stripblanks">16/audio-subwoofer-symbolic.svg</file>
@@ -33,6 +34,7 @@
     <file alias="24x24@2/status/indicator-microphone-muted-70-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-70.svg</file>
     <file alias="24x24@2/status/indicator-microphone-muted-80-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-80.svg</file>
     <file alias="24x24@2/status/indicator-microphone-muted-90-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-90.svg</file>
+
 
     <file alias="48x48/status/indicator-microphone-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/microphone.svg</file>
     <file alias="48x48/status/indicator-microphone-muted-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/muted.svg</file>

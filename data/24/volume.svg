@@ -1,0 +1,139 @@
+<svg
+        xmlns='http://www.w3.org/2000/svg'
+        xmlns:svg='http://www.w3.org/2000/svg'
+        xmlns:gpa='https://www.gtk.org/grappa'
+        gpa:version='1'
+        gpa:state-names='low normal high disabled disabled-blocking'
+        gpa:state='0'
+        width='24'
+        height='24'>
+  <path
+          id='speaker'
+          class=''
+          mask='url(#disabled-mask)'
+          fill='url(#gpa:foreground) rgb(0,0,0)'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          d='M 9 6 C 8.73855 6, 8.50204 6.10053, 8.32422 6.26367 L 5.00002 8.99997 L 3.00002 8.99997 C 2.44602 8.99997, 2.00002 9.44597, 2.00002 9.99997 L 2.00002 14 C 2.00002 14.554, 2.44602 15, 3.00002 15 L 5.00002 15 L 8.34572 17.7539 C 8.35201 17.7594, 8.35688 17.7662, 8.3633 17.7715 L 8.38674 17.7891 C 8.55597 17.9205, 8.7682 18, 9.00002 18 C 9.55402 18, 10 17.554, 10 17 L 10 6.99997 C 10 6.44597, 9.55402 5.99997, 9.00002 5.99997 Z'
+          gpa:animation-repeat='0'
+          gpa:animation-segment='0'>
+  </path>
+  <path
+          id='low'
+          class=''
+          mask='url(#disabled-mask)'
+          fill='url(#gpa:foreground) rgb(0,0,0)'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          d='M 13.332 8 A 0.75 0.75 0 0 0 12.582 8.75 A 0.75 0.75 0 0 0 12.666 9.08984 L 12.6621 9.0918 A 5.4958 5.4958 0 0 1 13.4961 12 A 5.4958 5.4958 0 0 1 12.6621 14.9082 L 12.666 14.9102 A 0.75 0.75 0 0 0 12.582 15.25 A 0.75 0.75 0 0 0 13.332 16 A 0.75 0.75 0 0 0 13.9336 15.7012 L 13.9395 15.7051 A 7 7 0 0 0 15 12 A 7 7 0 0 0 13.9395 8.2949 L 13.9336 8.29881 A 0.75 0.75 0 0 0 13.332 7.99998 Z'
+          gpa:states='low normal high'
+          gpa:animation-repeat='0'
+          gpa:animation-segment='0'>
+  </path>
+  <path
+          id='medium'
+          class=''
+          mask='url(#disabled-mask)'
+          fill='url(#gpa:foreground) rgb(0,0,0)'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          d='M 16.498 6.5 A 0.75 0.75 0 0 0 15.748 7.25 A 0.75 0.75 0 0 0 15.8301 7.5918 A 8.9875 8.9875 0 0 1 16.9883 12 A 8.9875 8.9875 0 0 1 15.8301 16.4082 A 0.75 0.75 0 0 0 15.748 16.75 A 0.75 0.75 0 0 0 16.498 17.5 A 0.75 0.75 0 0 0 17.1348 17.1426 L 17.1387 17.1445 A 10.488 10.488 0 0 0 18.4863 12 A 10.488 10.488 0 0 0 17.1387 6.8555 L 17.1348 6.85745 A 0.75 0.75 0 0 0 16.498 6.50003 Z'
+          gpa:states='normal high'
+          gpa:animation-repeat='0'
+          gpa:animation-segment='0'>
+  </path>
+  <path
+          id='high'
+          class=''
+          mask='url(#disabled-mask)'
+          fill='url(#gpa:foreground) rgb(0,0,0)'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          d='M 19.682 5 A 0.75 0.75 0 0 0 18.932 5.75 A 0.75 0.75 0 0 0 19.0238 6.10742 A 12.5 12.5 0 0 1 20.5004 12 A 12.5 12.5 0 0 1 19.0238 17.8926 A 0.75 0.75 0 0 0 18.932 18.25 A 0.75 0.75 0 0 0 19.682 19 A 0.75 0.75 0 0 0 20.3442 18.5996 L 20.3461 18.5996 A 14 14 0 0 0 22.0004 12 A 14 14 0 0 0 20.3461 5.40042 L 20.3442 5.40042 A 0.75 0.75 0 0 0 19.682 5.00003 Z'
+          gpa:states='high'
+          gpa:animation-repeat='0'
+          gpa:animation-segment='0'>
+  </path>
+  <line
+          id='slash'
+          class='transparent-fill'
+          visibility='hidden'
+          fill='none'
+          stroke='url(#gpa:foreground) rgb(0,0,0)'
+          stroke-opacity='1'
+          stroke-width='1.25'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          stroke-miterlimit='4'
+          x1='6.045'
+          y1='5.42123'
+          x2='19.2458'
+          y2='18.6085'
+          gpa:stroke-minwidth='25%'
+          gpa:stroke-maxwidth='200%'
+          gpa:states='disabled disabled-blocking'
+          gpa:transition-type='animate'
+          gpa:transition-easing='ease-in-out'
+          gpa:transition-duration='200ms'>
+  </line>
+  <mask
+          id='disabled-mask'
+          opacity='1'>
+    <rect
+            id='bg'
+            class=''
+            fill='rgb(255,255,255)'
+            x='0'
+            y='0'
+            width='100%'
+            height='100%'>
+    </rect>
+    <line
+            id='slash-clip'
+            class=''
+            visibility='hidden'
+            clip-path='url(#clipPath1)'
+            stroke='rgb(0,0,0)'
+            stroke-opacity='1'
+            stroke-width='1.25'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-miterlimit='4'
+            x1='6.045'
+            y1='7.045'
+            x2='19.2458'
+            y2='20.23'
+            gpa:stroke-minwidth='25%'
+            gpa:stroke-maxwidth='200%'
+            gpa:states='disabled disabled-blocking'
+            gpa:transition-type='animate'
+            gpa:transition-easing='ease-in-out'
+            gpa:transition-duration='200ms'>
+    </line>
+    <rect
+            id='rect1'
+            class=''
+            visibility='hidden'
+            fill='rgb(0,0,0)'
+            fill-opacity='0.5'
+            fill-rule='nonzero'
+            stroke-opacity='1'
+            stroke-width='2'
+            stroke-linecap='butt'
+            stroke-linejoin='miter'
+            stroke-miterlimit='4'
+            x='0'
+            y='0'
+            width='100%'
+            height='100%'
+            rx='1'
+            ry='1'
+            gpa:stroke-minwidth='25%'
+            gpa:stroke-maxwidth='150%'
+            gpa:states='disabled disabled-blocking'
+            gpa:transition-type='fade'
+            gpa:transition-easing='ease-in-out'
+            gpa:transition-duration='200ms'>
+    </rect>
+  </mask>
+</svg>

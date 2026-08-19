@@ -52,6 +52,7 @@ shared_module(
     'src/Widgets/PlayerList.vala',
     'src/Widgets/DeviceManagerWidget.vala',
     'src/Widgets/DeviceItem.vala',
+    'src' / 'Widgets' / 'Symbol.vala',
     'src/Services/PulseAudioManager.vala',
     'src/Services/MprisClient.vala',
     'src/Services/Volume-control.vala',
