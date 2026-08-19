@@ -10,7 +10,6 @@
         height='24'>
   <path
           id='speaker'
-          class=''
           mask='url(#disabled-mask)'
           fill='url(#gpa:foreground) rgb(0,0,0)'
           fill-opacity='1'
@@ -18,30 +17,52 @@
           d='M 9 6 C 8.73855 6, 8.50204 6.10053, 8.32422 6.26367 L 5.00002 8.99997 L 3.00002 8.99997 C 2.44602 8.99997, 2.00002 9.44597, 2.00002 9.99997 L 2.00002 14 C 2.00002 14.554, 2.44602 15, 3.00002 15 L 5.00002 15 L 8.34572 17.7539 C 8.35201 17.7594, 8.35688 17.7662, 8.3633 17.7715 L 8.38674 17.7891 C 8.55597 17.9205, 8.7682 18, 9.00002 18 C 9.55402 18, 10 17.554, 10 17 L 10 6.99997 C 10 6.44597, 9.55402 5.99997, 9.00002 5.99997 Z'
           gpa:animation-repeat='0'
           gpa:animation-segment='0'>
-        <animate
+    <animate
             attributeName='fill'
             begin='gpa:states(low normal high disabled, disabled-blocking)'
-            to='url(#gpa:warning) #f9c440'
             dur='200ms'
-            fill='freeze'/>
-        <animate
+            fill='freeze'
+            to='url(#gpa:warning) rgb(249,196,64)'
+            keyTimes='0; 1'/>
+    <animate
             attributeName='fill'
             begin='gpa:states(disabled-blocking, low normal high disabled)'
-            to='url(#gpa:foreground) rgb(0,0,0)'
             dur='200ms'
-            fill='freeze'/>
-        <animate
+            fill='freeze'
+            to='url(#gpa:foreground) rgb(0,0,0)'
+            keyTimes='0; 1'/>
+    <animate
             attributeName='opacity'
             begin='gpa:states(low normal high disabled-blocking, disabled)'
-            to='0.5'
             dur='200ms'
-            fill='freeze'/>
-        <animate
+            fill='freeze'
+            to='0.5'
+            keyTimes='0; 1'/>
+    <animate
             attributeName='opacity'
             begin='gpa:states(disabled, low normal high disabled-blocking)'
-            to='1'
             dur='200ms'
-            fill='freeze'/>
+            fill='freeze'
+            to='1'
+            keyTimes='0; 1'/>
+    <animateTransform
+            attributeName='transform'
+            begin='gpa:states(low normal high, disabled disabled-blocking)'
+            dur='200ms'
+            fill='freeze'
+            from='0 0'
+            to='5 0'
+            keyTimes='0; 1'
+            type='translate'/>
+    <animateTransform
+            attributeName='transform'
+            begin='gpa:states(low normal high, disabled disabled-blocking)'
+            dur='200ms'
+            fill='freeze'
+            from='0 0'
+            to='5 0'
+            keyTimes='0; 1'
+            type='translate'/>
   </path>
   <path
           id='line-low'
@@ -66,6 +87,7 @@
   </path>
   <path
           id='line-medium'
+          visibility='hidden'
           mask='url(#disabled-mask)'
           fill='none'
           fill-rule='nonzero'
@@ -87,6 +109,7 @@
   </path>
   <path
           id='line-high'
+          visibility='hidden'
           mask='url(#disabled-mask)'
           fill='none'
           fill-rule='nonzero'
@@ -108,8 +131,7 @@
   </path>
   <line
           id='slash'
-          class='transparent-fill'
-          style='display:inline'
+          display='inline'
           visibility='hidden'
           fill='none'
           stroke='url(#gpa:foreground) rgb(0,0,0)'
@@ -134,7 +156,6 @@
           opacity='1'>
     <rect
             id='bg'
-            class=''
             fill='rgb(255,255,255)'
             x='0'
             y='0'
@@ -143,7 +164,6 @@
     </rect>
     <line
             id='slash-clip'
-            class=''
             visibility='hidden'
             clip-path='url(#clipPath1)'
             stroke='rgb(0,0,0)'
