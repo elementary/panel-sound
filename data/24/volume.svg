@@ -12,6 +12,7 @@
    xmlns:gpa="https://www.gtk.org/grappa">
   <defs
      id="defs1" />
+ <g id="mask-group" mask="url(#disabled-mask)">
   <g
      id="g1">
       <animate
@@ -143,7 +144,6 @@
          type="translate" />
     <path
        id="speaker"
-       mask="url(#disabled-mask)"
        fill="url(#gpa:foreground) rgb(0,0,0)"
        fill-opacity="1"
        fill-rule="nonzero"
@@ -227,6 +227,7 @@
        gpa:transition-duration="200ms"
        gpa:animation-repeat="0"
        gpa:animation-segment="0" />
+  </g>
   </g>
   <line
      id="slash"
