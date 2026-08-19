@@ -159,7 +159,7 @@
             ry='1'
             gpa:stroke-minwidth='25%'
             gpa:stroke-maxwidth='150%'
-            gpa:states='disabled disabled-blocking'
+            gpa:states='disabled'
             gpa:transition-type='fade'
             gpa:transition-easing='ease-in-out'
             gpa:transition-duration='200ms'>
