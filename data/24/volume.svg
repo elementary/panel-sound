@@ -18,6 +18,18 @@
           d='M 9 6 C 8.73855 6, 8.50204 6.10053, 8.32422 6.26367 L 5.00002 8.99997 L 3.00002 8.99997 C 2.44602 8.99997, 2.00002 9.44597, 2.00002 9.99997 L 2.00002 14 C 2.00002 14.554, 2.44602 15, 3.00002 15 L 5.00002 15 L 8.34572 17.7539 C 8.35201 17.7594, 8.35688 17.7662, 8.3633 17.7715 L 8.38674 17.7891 C 8.55597 17.9205, 8.7682 18, 9.00002 18 C 9.55402 18, 10 17.554, 10 17 L 10 6.99997 C 10 6.44597, 9.55402 5.99997, 9.00002 5.99997 Z'
           gpa:animation-repeat='0'
           gpa:animation-segment='0'>
+        <animate
+            attributeName='fill'
+            begin='gpa:states(low normal high disabled, disabled-blocking)'
+            to='url(#gpa:warning) #f9c440'
+            dur='200ms'
+            fill='freeze'/>
+        <animate
+            attributeName='fill'
+            begin='gpa:states(disabled-blocking, low normal high disabled)'
+            to='url(#gpa:foreground) rgb(0,0,0)'
+            dur='200ms'
+            fill='freeze'/>
   </path>
   <path
           id='line-low'
