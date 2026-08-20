@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-10-06 12:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -17,20 +17,20 @@ msgstr ""
 "X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:45+0000\n"
 
-#: src/Indicator.vala:415
+#: src/Indicator.vala:393
 msgid "Sound Settings…"
 msgstr "הגדרות צליל…"
 
-#: src/Indicator.vala:691
+#: src/Indicator.vala:679
 #, c-format
 msgid "Volume: %.0f%%"
 msgstr "עצמת שמע: %.0f%%"
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to unmute"
 msgstr "ההשתקה תבוטל עם כפתור אמצעי"
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to mute"
 msgstr "השתקה עם כפתור אמצעי"
 
@@ -38,19 +38,19 @@ msgstr "השתקה עם כפתור אמצעי"
 msgid "Not playing"
 msgstr "לא מנגן"
 
-#: src/Widgets/PlayerRow.vala:31
+#: src/Widgets/PlayerRow.vala:30
 msgid "Music player"
 msgstr "נגן מוזיקה"
 
-#: src/Widgets/PlayerRow.vala:566
+#: src/Widgets/PlayerRow.vala:538
 msgid "Unknown Artist"
 msgstr "אמן לא ידוע"
 
-#: src/Widgets/Scale.vala:67
+#: src/Widgets/Scale.vala:74
 msgid "Mute"
 msgstr "השתקה"
 
-#: src/Widgets/Scale.vala:69
+#: src/Widgets/Scale.vala:76
 msgid "Unmute"
 msgstr "ביטול השתקה"
 

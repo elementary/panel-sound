@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2019-12-17 19:17+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -16,20 +16,20 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:45+0000\n"
 
-#: src/Indicator.vala:415
+#: src/Indicator.vala:393
 msgid "Sound Settings…"
 msgstr "आवाजाच्या सॆटींग्स…"
 
-#: src/Indicator.vala:691
+#: src/Indicator.vala:679
 #, c-format
 msgid "Volume: %.0f%%"
 msgstr ""
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to unmute"
 msgstr ""
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to mute"
 msgstr ""
 
@@ -39,19 +39,19 @@ msgstr ""
 msgid "Not playing"
 msgstr "सध्या सुरु नाही"
 
-#: src/Widgets/PlayerRow.vala:31
+#: src/Widgets/PlayerRow.vala:30
 msgid "Music player"
 msgstr "संगीतपटू"
 
-#: src/Widgets/PlayerRow.vala:566
+#: src/Widgets/PlayerRow.vala:538
 msgid "Unknown Artist"
 msgstr "अज्ञात कलाकार"
 
-#: src/Widgets/Scale.vala:67
+#: src/Widgets/Scale.vala:74
 msgid "Mute"
 msgstr ""
 
-#: src/Widgets/Scale.vala:69
+#: src/Widgets/Scale.vala:76
 msgid "Unmute"
 msgstr ""
 

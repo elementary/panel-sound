@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wingpanel-indicator-sound\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2016-10-08 16:48+0000\n"
 "Last-Translator: aberba <karabutaworld@gmail.com>\n"
 "Language-Team: Akan <ak@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-04-05 07:45+0000\n"
 "X-Generator: Launchpad (build 18335)\n"
 
-#: src/Indicator.vala:415
+#: src/Indicator.vala:393
 msgid "Sound Settings…"
 msgstr "Senea Ɛgyegye Ho Nhyehyeɛ…"
 
-#: src/Indicator.vala:691
+#: src/Indicator.vala:679
 #, c-format
 msgid "Volume: %.0f%%"
 msgstr ""
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to unmute"
 msgstr ""
 
-#: src/Indicator.vala:694
+#: src/Indicator.vala:682
 msgid "Middle-click to mute"
 msgstr ""
 
@@ -41,20 +41,20 @@ msgstr ""
 msgid "Not playing"
 msgstr "Agyae bɔ"
 
-#: src/Widgets/PlayerRow.vala:31
+#: src/Widgets/PlayerRow.vala:30
 msgid "Music player"
 msgstr "Dwumadi a wɔde bɔ nnwom"
 
-#: src/Widgets/PlayerRow.vala:566
+#: src/Widgets/PlayerRow.vala:538
 #, fuzzy
 msgid "Unknown Artist"
 msgstr "Edin nnka ho"
 
-#: src/Widgets/Scale.vala:67
+#: src/Widgets/Scale.vala:74
 msgid "Mute"
 msgstr ""
 
-#: src/Widgets/Scale.vala:69
+#: src/Widgets/Scale.vala:76
 msgid "Unmute"
 msgstr ""
 
