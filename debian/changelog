@@ -1,34 +1,34 @@
-wingpanel-indicator-sound (8.0.3) jammy; urgency=medium
+io.elementary.panel.sound (8.0.3) jammy; urgency=medium
 
   * Release 8.0.3 (#316)
 
- -- elementary, Inc. <builds@elementary.io>  Thu, 05 Feb 2026 20:13:58 +0000
+ -- elementary <builds@elementary.io>  Thu, 05 Feb 2026 20:13:58 +0000
 
-wingpanel-indicator-sound (8.0.2) jammy; urgency=medium
+io.elementary.panel.sound (8.0.2) jammy; urgency=medium
 
   * Release 8.0.2 (#309)
 
- -- elementary, Inc. <builds@elementary.io>  Fri, 10 Oct 2025 17:25:11 +0000
+ -- elementary <builds@elementary.io>  Fri, 10 Oct 2025 17:25:11 +0000
 
-wingpanel-indicator-sound (8.0.1) jammy; urgency=medium
+io.elementary.panel.sound (8.0.1) jammy; urgency=medium
 
   * Release 8.0.1 (#287)
 
- -- elementary, Inc. <builds@elementary.io>  Mon, 10 Mar 2025 20:32:16 +0000
+ -- elementary <builds@elementary.io>  Mon, 10 Mar 2025 20:32:16 +0000
 
-wingpanel-indicator-sound (8.0.0) jammy; urgency=medium
+io.elementary.panel.sound (8.0.0) jammy; urgency=medium
 
   * Release 8.0.0 (#274)
 
- -- elementary, Inc. <builds@elementary.io>  Wed, 21 Aug 2024 19:50:34 +0000
+ -- elementary <builds@elementary.io>  Wed, 21 Aug 2024 19:50:34 +0000
 
-wingpanel-indicator-sound (7.0.0) jammy; urgency=medium
+io.elementary.panel.sound (7.0.0) jammy; urgency=medium
 
   * Release 7.0.0
 
  -- Danielle Foré <danielle@elementary.io>  Tue, 11 Jul 2023 13:23:14 -0700
 
-wingpanel-indicator-sound (6.0.2) bionic; urgency=medium
+io.elementary.panel.sound (6.0.2) bionic; urgency=medium
 
   * Release 6.0.2 (#242)
   * Fix switch animation on first open (#243)
@@ -47,7 +47,7 @@ wingpanel-indicator-sound (6.0.2) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Mon, 24 Oct 2022 17:22:05 +0000
 
-wingpanel-indicator-sound (6.0.1) bionic; urgency=medium
+io.elementary.panel.sound (6.0.1) bionic; urgency=medium
 
   * Release 6.0.1 (#227)
   * Update translation files
@@ -61,7 +61,7 @@ wingpanel-indicator-sound (6.0.1) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Thu, 18 Nov 2021 18:37:51 +0000
 
-wingpanel-indicator-sound (6.0.0) bionic; urgency=medium
+io.elementary.panel.sound (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#211)
   * DeviceManager: Remember previously selected devices (#192)
@@ -81,7 +81,7 @@ wingpanel-indicator-sound (6.0.0) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Wed, 14 Jul 2021 20:03:57 +0000
 
-wingpanel-indicator-sound (2.1.8) bionic; urgency=medium
+io.elementary.panel.sound (2.1.8) bionic; urgency=medium
 
   * Release 2.1.8 (#174)
   * PlayerList: Fix always updating the default player (#168)
@@ -93,7 +93,7 @@ wingpanel-indicator-sound (2.1.8) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Tue, 05 Jan 2021 22:08:21 +0000
 
-wingpanel-indicator-sound (2.1.7) bionic; urgency=medium
+io.elementary.panel.sound (2.1.7) bionic; urgency=medium
 
   * Release 2.1.7 (#161)
   * Indicator.css: Fix flashing animation (#159)
@@ -104,7 +104,7 @@ wingpanel-indicator-sound (2.1.7) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Thu, 08 Oct 2020 18:20:38 +0000
 
-wingpanel-indicator-sound (2.1.6) bionic; urgency=medium
+io.elementary.panel.sound (2.1.6) bionic; urgency=medium
 
   * Release 2.1.6 (#155)
   * Appdata: Add icon (#153)
@@ -117,7 +117,7 @@ wingpanel-indicator-sound (2.1.6) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Fri, 07 Aug 2020 18:10:14 +0000
 
-wingpanel-indicator-sound (2.1.5) bionic; urgency=medium
+io.elementary.panel.sound (2.1.5) bionic; urgency=medium
 
   * Release 2.1.5 (#144)
   * Update translation files
@@ -137,7 +137,7 @@ wingpanel-indicator-sound (2.1.5) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Fri, 03 Apr 2020 18:41:54 +0000
 
-wingpanel-indicator-sound (2.1.4) bionic; urgency=medium
+io.elementary.panel.sound (2.1.4) bionic; urgency=medium
 
   * Release 2.1.4 (#126)
   * Add AppData (#125)
@@ -162,67 +162,67 @@ wingpanel-indicator-sound (2.1.4) bionic; urgency=medium
 
  -- elementary LLC <builds@elementary.io>  Mon, 25 Nov 2019 16:57:03 +0000
 
-wingpanel-indicator-sound (2.1.3) bionic; urgency=medium
+io.elementary.panel.sound (2.1.3) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Thu, 07 Mar 2019 01:07:57 -0600
 
-wingpanel-indicator-sound (2.1.2) bionic; urgency=medium
+io.elementary.panel.sound (2.1.2) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Wed, 19 Dec 2018 06:00:05 -0600
 
-wingpanel-indicator-sound (2.1.1) bionic; urgency=medium
+io.elementary.panel.sound (2.1.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 01 Oct 2018 06:46:59 -0500
 
-wingpanel-indicator-sound (2.1.0) bionic; urgency=medium
+io.elementary.panel.sound (2.1.0) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 18 Jun 2018 19:38:50 -0500
 
-wingpanel-indicator-sound (2.0.5) xenial; urgency=medium
+io.elementary.panel.sound (2.0.5) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 02 May 2017 21:14:53 -0500
 
-wingpanel-indicator-sound (2.0.4) xenial; urgency=medium
+io.elementary.panel.sound (2.0.4) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Fri, 21 Apr 2017 13:43:14 -0500
 
-wingpanel-indicator-sound (2.0.3) xenial; urgency=medium
+io.elementary.panel.sound (2.0.3) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Sun, 30 Oct 2016 22:14:43 +0100
 
-wingpanel-indicator-sound (2.0.2) xenial; urgency=medium
+io.elementary.panel.sound (2.0.2) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 04 Oct 2016 01:01:40 -0500
 
-wingpanel-indicator-sound (2.0.1) xenial; urgency=medium
+io.elementary.panel.sound (2.0.1) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Sun, 11 Sep 2016 13:15:25 -0500
 
-wingpanel-indicator-sound (2.0) xenial; urgency=medium
+io.elementary.panel.sound (2.0) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Sun, 14 Aug 2016 03:40:46 -0500
 
-wingpanel-indicator-sound (0.1) trusty; urgency=low
+io.elementary.panel.sound (0.1) trusty; urgency=low
 
   * Initial Release.
 
