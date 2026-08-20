@@ -324,7 +324,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
             });
         }
 
-         display_widget.volume_state = get_volume_state (volume_control.volume.volume);
+        display_widget.volume_state = get_volume_state (volume_control.volume.volume);
     }
 
     private void on_volume_icon_scroll_event (Value event_value) {
