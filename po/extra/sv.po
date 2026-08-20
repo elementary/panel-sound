@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-10-31 12:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Justera högtalar- och mikrofonvolymen eller se information om Nu spelas upp "
 "och mediekontroller"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73

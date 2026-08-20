@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2022-09-21 06:14+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -28,6 +28,10 @@ msgid ""
 "Adjust speaker and microphone volume or see Now Playing information and "
 "media controls"
 msgstr ""
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "کۆمپانیای هاوبەشی ئێلیمێنتری."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -94,6 +98,3 @@ msgstr ""
 #: data/sound.metainfo.xml.in:134
 msgid "Minor visual improvements"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "کۆمپانیای هاوبەشی ئێلیمێنتری."

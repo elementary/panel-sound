@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-11-30 19:55+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
@@ -28,6 +28,10 @@ msgid ""
 "Adjust speaker and microphone volume or see Now Playing information and "
 "media controls"
 msgstr "調整喇叭和麥克風音量，或檢視目前播放媒體的資訊以及媒體控制"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73

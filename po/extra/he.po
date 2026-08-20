@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-10-07 17:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "כוונון עצמת הרמקולים והמיקרופון או הצגת הפרטים על מה שמתנגן לרבות האפשרות "
 "לפקד על המדיה"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary בע״מ"
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -100,9 +104,6 @@ msgstr "שיפורים חזותיים קלים"
 
 #~ msgid "Fix duplicate default player"
 #~ msgstr "תיקון כפילות נגן בררת מחדל"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary בע״מ"
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr "הבהוב האטימות במהלך הנפשת סמלים תוקן"

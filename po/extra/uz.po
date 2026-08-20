@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2021-03-21 13:45+0000\n"
 "Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Dinamik va mikrofon ovoz balandligini o'zgartirish yoki hozir ijro "
 "etilayotgan fayl haqida ma'lumotlar va ularni boshqarish tugmalarini ko'rish"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -98,9 +102,6 @@ msgstr ""
 #| msgid "Performance improvements"
 msgid "Minor visual improvements"
 msgstr "Samaradorlikni oshirish"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary Inc."
 
 #~ msgid "Update default music player when changed"
 #~ msgstr "Odatiy musiqa ijrochisi o'zgartirilganda yangilash"

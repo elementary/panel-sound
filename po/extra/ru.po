@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-10-07 17:55+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -31,6 +31,10 @@ msgid ""
 msgstr ""
 "Отрегулируйте громкость динамика и микрофона или просмотрите информацию о "
 "воспроизведении и средствах управления мультимедиа"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -104,9 +108,6 @@ msgstr "Незначительные визуальные улучшения"
 
 #~ msgid "Fix duplicate default player"
 #~ msgstr "Исправлено дублирование проигрывателя по умолчанию"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr "Исправлена непрозрачность во время анимации пиктограмм"

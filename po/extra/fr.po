@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-20 22:03+0000\n"
 "PO-Revision-Date: 2025-10-07 17:55+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Ajuster le volume de lecture et d'enregistrement ou voir et contrôler les "
 "médias en-cours"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -108,9 +112,6 @@ msgstr "Améliorations visuelles mineures"
 
 #~ msgid "Fix duplicate default player"
 #~ msgstr "Correction du lecteur par défaut dupliqué"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr "Correction de l'opacité de l'icône pendant l'animation"
