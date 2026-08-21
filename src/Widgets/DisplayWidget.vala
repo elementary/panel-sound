@@ -47,28 +47,32 @@ public class Sound.DisplayWidget : Gtk.Box {
         append (mic_revealer);
         append (volume_icon);
 
-        var mic_scroll_controller = new Gtk.EventControllerLegacy ();
-        mic_scroll_controller.event.connect ((e) => {
-            if (e.get_event_type () != Gdk.EventType.SCROLL) {
-                return Gdk.EVENT_PROPAGATE;
+        var mic_scroll_controller = new Gtk.EventControllerScroll (BOTH_AXES);
+        mic_scroll_controller.scroll.connect (() => {
+            unowned var event = mic_scroll_controller.get_current_event () as Gdk.ScrollEvent;
+            if (event == null) {
+                return false;
             }
 
             var event_value = Value (typeof (Gdk.ScrollEvent));
-            event_value.set_instance (e);
+            event_value.set_instance (event);
             mic_scroll_event (event_value);
-            return Gdk.EVENT_STOP;
+
+            return true;
         });
 
-        var volume_scroll_controller = new Gtk.EventControllerLegacy ();
-        volume_scroll_controller.event.connect ((e) => {
-            if (e.get_event_type () != Gdk.EventType.SCROLL) {
-                return Gdk.EVENT_PROPAGATE;
+        var volume_scroll_controller = new Gtk.EventControllerScroll (BOTH_AXES);
+        volume_scroll_controller.scroll.connect (() => {
+            unowned var event = mic_scroll_controller.get_current_event () as Gdk.ScrollEvent;
+            if (event == null) {
+                return false;
             }
 
             var event_value = Value (typeof (Gdk.ScrollEvent));
-            event_value.set_instance (e);
+            event_value.set_instance (event);
             volume_scroll_event (event_value);
-            return Gdk.EVENT_STOP;
+
+            return true;
         });
 
         mic_icon.add_controller (mic_scroll_controller);

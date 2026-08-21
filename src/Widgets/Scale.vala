@@ -49,17 +49,18 @@ public class Sound.Widgets.Scale : Granite.Bin {
             slider_dropped ();
         });
 
-        var scroll_controller = new Gtk.EventControllerLegacy ();
-        scroll_controller.event.connect_after ((e) => {
-            if (e.get_event_type () != Gdk.EventType.SCROLL) {
-                return Gdk.EVENT_PROPAGATE;
+        var scroll_controller = new Gtk.EventControllerScroll (BOTH_AXES);
+        scroll_controller.scroll.connect (() => {
+            unowned var event = scroll_controller.get_current_event () as Gdk.ScrollEvent;
+            if (event == null) {
+                return false;
             }
 
             var event_value = Value (typeof (Gdk.ScrollEvent));
-            event_value.set_instance (e);
+            event_value.set_instance (event);
             scroll_event (event_value);
 
-            return Gdk.EVENT_STOP;
+            return true;
         });
 
         scale_widget.add_controller (gesture_click);
