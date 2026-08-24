@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-22 10:56+0000\n"
 "PO-Revision-Date: 2021-07-21 03:37+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Lautsprecher- und Mikrofonlautstärke anpassen oder Informationen über den "
 "laufenden Medientitel und dessen Steuerung anzeigen"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -104,9 +108,6 @@ msgstr "Kleinere optische Verbesserungen"
 #~ msgid "Fix duplicate default player"
 #~ msgstr ""
 #~ "Behebt einen Fehler, bei dem der Standardplayer doppelt angezeigt wurde"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr ""

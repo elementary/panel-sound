@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-22 10:56+0000\n"
 "PO-Revision-Date: 2025-10-08 21:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/wingpanel/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "スピーカーやマイクの音量を調整したり、現在再生中の曲の情報やメディアコント"
 "ロールを表示したりします"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -103,9 +107,6 @@ msgstr "軽微な視覚上の改善"
 
 #~ msgid "Fix duplicate default player"
 #~ msgstr "デフォルトのプレーヤーが重複して表示される不具合を修正"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr ""

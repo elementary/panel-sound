@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-22 10:56+0000\n"
 "PO-Revision-Date: 2023-06-17 16:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/wingpanel/"
@@ -31,6 +31,10 @@ msgid ""
 msgstr ""
 "Dopasuj głośność głośnika oraz mikrofonu lub zobacz informację na temat "
 "aktualnie odtwarzanych mediów i kontroluj je"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -105,9 +109,6 @@ msgstr "Mniejsze poprawki wizualne"
 
 #~ msgid "Fix duplicate default player"
 #~ msgstr "Naprawiono zduplikowany odtwarzacz domyślny"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix opacity flash during icon animation"
 #~ msgstr "Naprawiono błysk przeźroczystości podczas animacji ikony"

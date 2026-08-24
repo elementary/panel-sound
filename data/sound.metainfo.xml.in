@@ -2,7 +2,7 @@
 <!-- Copyright 2019-2023 elementary, Inc. <contact@elementary.io> -->
 <component type="addon">
   <id>io.elementary.wingpanel.sound</id>
-  <translation type="gettext">sound-indicator</translation>
+  <translation type="gettext">io.elementary.wingpanel.sound</translation>
   <extends>io.elementary.wingpanel</extends>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>

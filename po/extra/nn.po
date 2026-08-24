@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 17:26+0000\n"
+"POT-Creation-Date: 2026-08-22 10:56+0000\n"
 "PO-Revision-Date: 2020-07-17 06:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -30,6 +30,10 @@ msgid ""
 msgstr ""
 "Juster volumet på høgtalar og mikrofon, eller sjå kva som bli spelt av og "
 "mediekontrollarar"
+
+#: data/sound.metainfo.xml.in:28
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:36 data/sound.metainfo.xml.in:48
 #: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:73
@@ -98,9 +102,6 @@ msgstr ""
 #| msgid "Performance improvements"
 msgid "Minor visual improvements"
 msgstr "Forbetringar på ytelse"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Correctly show \"Unknown Artist\" when artist info isn't available"
 #~ msgstr ""

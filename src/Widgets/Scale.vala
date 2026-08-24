@@ -3,15 +3,17 @@
 * SPDX-FileCopyrightText: 2015-2025 elementary, Inc. (https://elementary.io)
 */
 
-public class Sound.Widgets.Scale : Gtk.EventBox {
+public class Sound.Widgets.Scale : Granite.Bin {
+    // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
+    // resulsts build error with valac 0.56.18
+    // See https://gitlab.gnome.org/GNOME/vala/-/work_items/1671
+    public signal void scroll_event (Value event_value);
     public signal void slider_dropped ();
 
     public Gtk.Adjustment adjustment { get; construct; }
     public string icon { get; set; }
 
     public bool active { get; set; default = true; }
-
-    private Gtk.GestureMultiPress gesture_click;
 
     public Scale (Gtk.Adjustment adjustment) {
         Object (adjustment: adjustment);
@@ -22,10 +24,7 @@ public class Sound.Widgets.Scale : Gtk.EventBox {
     }
 
     construct {
-        var image = new Gtk.Image ();
-
         var toggle = new Gtk.ToggleButton ();
-        toggle.image = image;
 
         var scale_widget = new Gtk.Scale (HORIZONTAL, adjustment) {
             draw_value = false,
@@ -40,25 +39,33 @@ public class Sound.Widgets.Scale : Gtk.EventBox {
             margin_bottom = 6,
             margin_end = 12
         };
-        box.add (toggle);
-        box.add (scale_widget);
+        box.append (toggle);
+        box.append (scale_widget);
 
         child = box;
-        add_events (Gdk.EventMask.SMOOTH_SCROLL_MASK);
-        above_child = false;
 
-        gesture_click = new Gtk.GestureMultiPress (scale_widget);
+        var gesture_click = new Gtk.GestureClick ();
         gesture_click.released.connect (() => {
             slider_dropped ();
         });
 
-        scale_widget.scroll_event.connect ((e) => {
-            /* Re-emit the signal on the eventbox instead of using native handler */
-            scroll_event (e);
+        var scroll_controller = new Gtk.EventControllerLegacy ();
+        scroll_controller.event.connect_after ((e) => {
+            if (e.get_event_type () != Gdk.EventType.SCROLL) {
+                return Gdk.EVENT_PROPAGATE;
+            }
+
+            var event_value = Value (typeof (Gdk.ScrollEvent));
+            event_value.set_instance (e);
+            scroll_event (event_value);
+
             return Gdk.EVENT_STOP;
         });
 
-        bind_property ("icon", image, "icon-name");
+        scale_widget.add_controller (gesture_click);
+        scale_widget.add_controller (scroll_controller);
+
+        bind_property ("icon", toggle, "icon-name");
 
         bind_property ("active", scale_widget, "sensitive", BindingFlags.SYNC_CREATE);
         bind_property ("active", toggle, "active", BIDIRECTIONAL | SYNC_CREATE);
