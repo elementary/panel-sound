@@ -23,7 +23,7 @@ public class Sound.Widgets.PlayerList : Granite.Bin {
 
     private AppInfo? default_player;
     private PlayerRow bluetooth_widget;
-    private PlayerRow default_widget;
+    private PlayerRow? default_widget;
     private HashTable<string,PlayerRow> ifaces;
     private Services.DBusImpl impl;
 
@@ -60,7 +60,8 @@ public class Sound.Widgets.PlayerList : Granite.Bin {
 
         object_manager.media_player_status_changed.connect ((status, title, artist) => {
             bluetooth_widget.update_play (status, title, artist);
-            if (status == "playing" && default_widget.client.player.playback_status == "Playing") {
+            if (status == "playing" && default_widget != null && default_widget.client != null
+                && default_widget.client.player.playback_status == "Playing") {
                 try {
                     default_widget.client.player.play_pause ();
                 } catch (Error e) {
@@ -106,7 +107,8 @@ public class Sound.Widgets.PlayerList : Granite.Bin {
      * @param iface The constructed MprisClient instance
      */
     private void add_iface (string name, Services.MprisClient iface) {
-        if ((default_player != null) && (iface.player.desktop_entry == default_player.get_id ().replace (".desktop", ""))) {
+        if ((default_player != null) && default_widget != null
+            && (iface.player.desktop_entry == default_player.get_id ().replace (".desktop", ""))) {
             default_widget.mpris_name = name;
             default_widget.client = iface;
             ifaces.insert (name, default_widget);
@@ -132,7 +134,7 @@ public class Sound.Widgets.PlayerList : Granite.Bin {
      * @param name DBUS name to remove handler for
      */
     private void destroy_iface (string name) {
-        if (default_widget.mpris_name == name) {
+        if (default_widget != null && default_widget.mpris_name == name) {
             default_widget.client = null;
         } else {
             var widg = ifaces[name];
