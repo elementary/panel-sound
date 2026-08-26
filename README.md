@@ -9,7 +9,7 @@ You'll need the following dependencies:
 
     libgranite-7-dev >= 7.7.0
     libglib2.0-dev
-    libgtk-4-dev
+    libgtk-4-dev >= 4.22
     libnotify-dev
     libpulse-dev
     libwingpanel-9-dev
