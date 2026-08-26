@@ -67,7 +67,6 @@ shared_module(
         dependency('granite-7', version: '>=7.7.0'),
         dependency('gtk4'),
         dependency('gtk4-wayland'),
-        dependency('gtk4-x11'),
         dependency('libpulse'),
         dependency('libpulse-mainloop-glib'),
         dependency('libnotify'),
