@@ -3,7 +3,7 @@
 * SPDX-FileCopyrightText: 2026 elementary, Inc. (https://elementary.io)
 */
 
-namespace Granite.SymbolState {
+namespace SoundIndicator.SymbolState {
     // The default state
     public const string NORMAL = "normal";
     // Disabled state represented by a slash
@@ -12,7 +12,7 @@ namespace Granite.SymbolState {
     public const string ACTIVE = "active";
 }
 
-public class Granite.Symbol : Granite.Bin {
+public class SoundIndicator.Symbol : Granite.Bin {
     public string resource_path { get; construct; }
 
     public int pixel_size {

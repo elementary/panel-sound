@@ -30,7 +30,7 @@ public class Sound.DisplayWidget : Gtk.Box {
     public signal void mic_scroll_event (Value event_value);
 
     construct {
-        var volume_symbol = new Granite.Symbol ("/io/elementary/wingpanel/sound/24/volume.svg") {
+        var volume_symbol = new SoundIndicator.Symbol ("/io/elementary/wingpanel/sound/24/volume.svg") {
             pixel_size = 24
         };
 

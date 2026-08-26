@@ -357,11 +357,11 @@ public class Sound.Indicator : Wingpanel.Indicator {
 
     private unowned string get_volume_state (double volume) {
         if (volume <= 0 || this.volume_control.mute) {
-            return this.mute_blocks_sound ? "disabled-blocking" : Granite.SymbolState.DISABLED;
+            return this.mute_blocks_sound ? "disabled-blocking" : SoundIndicator.SymbolState.DISABLED;
         } else if (volume <= 0.3) {
             return "low";
         } else if (volume <= 0.7) {
-            return Granite.SymbolState.NORMAL;
+            return SoundIndicator.SymbolState.NORMAL;
         } else {
             return "high";
         }
