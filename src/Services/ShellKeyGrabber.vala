@@ -11,7 +11,7 @@
  * @POPUP: allow action while a shell menu is open
  */
 [Flags]
-public enum ActionMode {
+public enum Sound.ActionMode {
     NONE = 0,
     NORMAL = 1 << 0,
     OVERVIEW = 1 << 1,
@@ -24,7 +24,7 @@ public enum ActionMode {
 }
 
 [Flags]
-public enum Meta.KeyBindingFlags {
+public enum Sound.Meta.KeyBindingFlags {
     NONE = 0,
     PER_WINDOW = 1 << 0,
     BUILTIN = 1 << 1,
@@ -33,14 +33,14 @@ public enum Meta.KeyBindingFlags {
     IGNORE_AUTOREPEAT = 1 << 4,
 }
 
-public struct Accelerator {
+public struct Sound.Accelerator {
     public string name;
     public ActionMode mode_flags;
     public Meta.KeyBindingFlags grab_flags;
 }
 
 [DBus (name = "org.gnome.Shell")]
-public interface ShellKeyGrabber : GLib.Object {
+public interface Sound.ShellKeyGrabber : GLib.Object {
     public abstract signal void accelerator_activated (uint action, GLib.HashTable<string, GLib.Variant> parameters_dict);
 
     public abstract uint grab_accelerator (string accelerator, ActionMode mode_flags, Meta.KeyBindingFlags grab_flags) throws GLib.DBusError, GLib.IOError;
