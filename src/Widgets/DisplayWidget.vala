@@ -34,16 +34,15 @@ public class Sound.DisplayWidget : Gtk.Box {
             pixel_size = 24
         };
 
-        var mic_icon = new Gtk.Spinner ();
-        mic_icon.add_css_class ("mic-icon");
-        mic_icon.add_css_class ("composited-indicator");
+        var mic_symbol = new SoundIndicator.Symbol ("/io/elementary/wingpanel/sound/24/microphone.svg") {
+            pixel_size = 24
+        };
 
         var mic_revealer = new Gtk.Revealer () {
-            child = mic_icon,
+            child = mic_symbol,
             transition_type = SLIDE_LEFT
         };
 
-        valign = Gtk.Align.CENTER;
         append (mic_revealer);
         append (volume_symbol);
 
@@ -71,7 +70,7 @@ public class Sound.DisplayWidget : Gtk.Box {
             return Gdk.EVENT_STOP;
         });
 
-        mic_icon.add_controller (mic_scroll_controller);
+        mic_symbol.add_controller (mic_scroll_controller);
         volume_symbol.add_controller (volume_scroll_controller);
 
         var mic_gesture_click = new Gtk.GestureClick () {
@@ -83,7 +82,7 @@ public class Sound.DisplayWidget : Gtk.Box {
             mic_gesture_click.reset ();
         });
 
-        mic_icon.add_controller (mic_gesture_click);
+        mic_symbol.add_controller (mic_gesture_click);
 
         var volume_gesture_click = new Gtk.GestureClick () {
             button = Gdk.BUTTON_MIDDLE
@@ -111,9 +110,9 @@ public class Sound.DisplayWidget : Gtk.Box {
 
         notify["mic-muted"].connect (() => {
             if (mic_muted) {
-                mic_icon.add_css_class ("disabled");
+                mic_symbol.state = SoundIndicator.SymbolState.DISABLED;
             } else {
-                mic_icon.remove_css_class ("disabled");
+                mic_symbol.state = SoundIndicator.SymbolState.NORMAL;
             }
         });
     }
