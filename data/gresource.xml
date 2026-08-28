@@ -34,11 +34,5 @@
     <file alias="24x24@2/status/indicator-microphone-muted-70-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-70.svg</file>
     <file alias="24x24@2/status/indicator-microphone-muted-80-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-80.svg</file>
     <file alias="24x24@2/status/indicator-microphone-muted-90-symbolic.svg" compressed="true" preprocess="xml-stripblanks">24/muted-90.svg</file>
-
-    <file alias="48x48/status/indicator-microphone-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/microphone.svg</file>
-    <file alias="48x48/status/indicator-microphone-muted-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/muted.svg</file>
-
-    <file alias="48x48@2/status/indicator-microphone-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/microphone.svg</file>
-    <file alias="48x48@2/status/indicator-microphone-muted-symbolic.svg" compressed="true" preprocess="xml-stripblanks">48/muted.svg</file>
   </gresource>
 </gresources>
