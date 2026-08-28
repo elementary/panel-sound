@@ -21,7 +21,7 @@ public class Sound.DisplayWidget : Gtk.Box {
 
     public bool show_mic { get; set; }
     public bool mic_muted { get; set; }
-    public string icon_name { get; set; }
+    public string volume_state { get; set; }
 
     // HACK: Using Gdk.ScrollEvent instead of Value as the type of the parameter
     // resulsts build error with valac 0.56.18
@@ -30,7 +30,7 @@ public class Sound.DisplayWidget : Gtk.Box {
     public signal void mic_scroll_event (Value event_value);
 
     construct {
-        var volume_icon = new Gtk.Image () {
+        var volume_symbol = new SoundIndicator.Symbol ("/io/elementary/wingpanel/sound/24/volume.svg") {
             pixel_size = 24
         };
 
@@ -45,7 +45,7 @@ public class Sound.DisplayWidget : Gtk.Box {
 
         valign = Gtk.Align.CENTER;
         append (mic_revealer);
-        append (volume_icon);
+        append (volume_symbol);
 
         var mic_scroll_controller = new Gtk.EventControllerLegacy ();
         mic_scroll_controller.event.connect ((e) => {
@@ -72,7 +72,7 @@ public class Sound.DisplayWidget : Gtk.Box {
         });
 
         mic_icon.add_controller (mic_scroll_controller);
-        volume_icon.add_controller (volume_scroll_controller);
+        volume_symbol.add_controller (volume_scroll_controller);
 
         var mic_gesture_click = new Gtk.GestureClick () {
             button = Gdk.BUTTON_MIDDLE
@@ -94,12 +94,12 @@ public class Sound.DisplayWidget : Gtk.Box {
             volume_gesture_click.reset ();
         });
 
-        volume_icon.add_controller (volume_gesture_click);
+        volume_symbol.add_controller (volume_gesture_click);
 
         bind_property (
-            "icon-name",
-            volume_icon,
-            "icon-name",
+            "volume-state",
+            volume_symbol,
+            "state",
             GLib.BindingFlags.BIDIRECTIONAL | GLib.BindingFlags.SYNC_CREATE
         );
         bind_property (

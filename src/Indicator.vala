@@ -115,7 +115,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
         display_widget.volume_press_event.connect (volume_control.toggle_mute);
         display_widget.mic_press_event.connect (volume_control.toggle_mic_mute);
 
-        display_widget.icon_name = get_volume_icon (volume_control.volume.volume);
+        display_widget.volume_state = get_volume_state (volume_control.volume.volume);
 
         display_widget.volume_scroll_event.connect_after (on_volume_icon_scroll_event);
         display_widget.mic_scroll_event.connect_after (on_mic_icon_scroll_event);
@@ -268,7 +268,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
         double volume = volume_control.volume.volume / max_volume;
         if (volume != volume_adjustment.get_value ()) {
             volume_adjustment.set_value (volume);
-            display_widget.icon_name = get_volume_icon (volume);
+            display_widget.volume_state = get_volume_state (volume);
         }
     }
 
@@ -283,13 +283,12 @@ public class Sound.Indicator : Wingpanel.Indicator {
     private void on_mute_change () {
         volume_scale.active = !volume_control.mute;
 
-        string volume_icon = get_volume_icon (volume_control.volume.volume);
-        display_widget.icon_name = volume_icon;
+        display_widget.volume_state = get_volume_state (volume_control.volume.volume);
 
         if (volume_control.mute) {
             volume_scale.icon = "audio-volume-muted-symbolic";
         } else {
-            volume_scale.icon = volume_icon;
+            volume_scale.icon = get_volume_icon (volume_control.volume.volume);
         }
     }
 
@@ -320,12 +319,12 @@ public class Sound.Indicator : Wingpanel.Indicator {
             sound_was_blocked_timeout_id = Timeout.add_seconds (5, () => {
                 mute_blocks_sound = false;
                 sound_was_blocked_timeout_id = 0;
-                display_widget.icon_name = get_volume_icon (volume_control.volume.volume);
+                display_widget.volume_state = get_volume_state (volume_control.volume.volume);
                 return false;
             });
         }
 
-        display_widget.icon_name = get_volume_icon (volume_control.volume.volume);
+        display_widget.volume_state = get_volume_state (volume_control.volume.volume);
     }
 
     private void on_volume_icon_scroll_event (Value event_value) {
@@ -353,6 +352,18 @@ public class Sound.Indicator : Wingpanel.Indicator {
             return "audio-volume-medium-symbolic";
         } else {
             return "audio-volume-high-symbolic";
+        }
+    }
+
+    private unowned string get_volume_state (double volume) {
+        if (volume <= 0 || this.volume_control.mute) {
+            return this.mute_blocks_sound ? "disabled-blocking" : SoundIndicator.SymbolState.DISABLED;
+        } else if (volume <= 0.3) {
+            return "low";
+        } else if (volume <= 0.7) {
+            return SoundIndicator.SymbolState.NORMAL;
+        } else {
+            return "high";
         }
     }
 
