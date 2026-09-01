@@ -63,6 +63,10 @@ public class SoundIndicator.Symbol : Granite.Bin {
         Object (resource_path: resource_path);
     }
 
+    class construct {
+        set_css_name ("symbol");
+    }
+
     construct {
         svg = new Gtk.Svg.from_resource (resource_path);
 
