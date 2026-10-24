@@ -644,7 +644,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
     /* This also plays a sound. TODO Is there a way of suppressing this if mic is on? */
     private bool show_notification (bool is_mic) {
         if (notification == null) {
-            notification = new Notify.Notification ("indicator-sound", "", "");
+            notification = new Notify.Notification ("indicator-sound", "", "audio-volume-high-symbolic");
             notification.set_hint ("x-canonical-private-synchronous", new Variant.string ("indicator-sound"));
         }
 
@@ -661,7 +661,7 @@ public class Sound.Indicator : Wingpanel.Indicator {
                 icon = get_volume_icon (volume_adjustment.get_value ());
             }
 
-            notification.update ("indicator-sound", "", icon);
+            notification.update (icon, icon, icon);
 
             int32 volume;
             if (is_mic) {
